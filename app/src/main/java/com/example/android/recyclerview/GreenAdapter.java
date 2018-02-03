@@ -38,18 +38,29 @@ import android.widget.TextView;
 public class GreenAdapter extends RecyclerView.Adapter<GreenAdapter.NumberViewHolder> {
 
     // TODO (1) Create a layout resource in res/layout/ called number_list_item.xml
+    //COMPLETE
 
     // Do steps 2 - 11 within number_list_item.xml
     // TODO (2) Make the root layout a FrameLayout
+    //COMPLETE
     // TODO (3) Make the width match_parent and the height wrap_content
+    //COMPLETE
     // TODO (4) Set the padding to 16dp
+    //COMPLETE
     // TODO (5) Add a TextView as the only child of the FrameLayout
+    //COMPLETE
     // TODO (6) Give the TextView an ID "@+id/tv_item_number"
+    //COMPLETE
     // TODO (7) Set the height and width to wrap_content
+    //COMPLETE
     // TODO (8) Align the TextView to the start of the parent
+    //COMPLETE
     // TODO (9) Center the TextView vertically in the layout
+    //COMPLETE
     // TODO (10) Set the font family to monospace
+    //COMPLETE
     // TODO (11) Set the text size to 42sp
+    //COMPLETE
 
     private static final String TAG = GreenAdapter.class.getSimpleName();
 
@@ -118,15 +129,34 @@ public class GreenAdapter extends RecyclerView.Adapter<GreenAdapter.NumberViewHo
     }
 
     // TODO (12) Create a class called NumberViewHolder that extends RecyclerView.ViewHolder
+    //COMPLETE
+    class NumberViewHolder extends RecyclerView.ViewHolder {
+
+        TextView listItemNumberView;
+
+        public NumberViewHolder(View itemView) {
+            super(itemView);
+            listItemNumberView = (TextView) itemView.findViewById(R.id.tv_item_number);
+        }
+
+        public void bind(int listIndex) {
+            listItemNumberView.setText(Integer.toString(listIndex));
+        }
+    }
 
     // TODO (13) Within NumberViewHolder, create a TextView variable called listItemNumberView
+    //COMPLETE
 
     // TODO (14) Create a constructor for NumberViewHolder that accepts a View called itemView as a parameter
+    //COMPLETE
     // TODO (15) Within the constructor, call super(itemView) and then find listItemNumberView by ID
-
+    //COMPLETE
     // TODO (16) Within the NumberViewHolder class, create a void method called bind that accepts an int parameter called listIndex
+    //COMPLETE
     // TODO (17) Within bind, set the text of listItemNumberView to the listIndex
+    //COMPLETE
     // TODO (18) Be careful to get the String representation of listIndex, as using setText with an int does something different
+    //COMPLETE
 
-    }
+
 }
